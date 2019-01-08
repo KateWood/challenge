@@ -1,0 +1,39 @@
+@import "./fontawesome/less/fontawesome";
+@import "./fontawesome/less/solid";
+
+// color variables
+@blue: #00bae7;
+@white: #fff;
+
+.autocompleteForm {
+  background-color: @blue;
+  padding: 10px;
+  
+  .autocomplete {
+    border: none;
+    background-color: @blue;
+    color: @white;
+    font-size: 24px;
+    font-weight: 100;
+    padding: 10px;
+    width: 95%;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: @white;
+    }
+  }
+
+  .searchIcon {
+    .fa-icon;
+    .fas;
+
+    &:before {
+      content: @fa-var-search;
+      color: @white;
+    }
+  }
+}
