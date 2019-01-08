@@ -1,0 +1,22 @@
+{
+  "name": "cornerstone_challenge",
+  "version": "1.0.0",
+  "description": "Front End code challenge for Cornerstone.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KateWood/challenge.git"
+  },
+  "author": "Kate Wood",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KateWood/challenge/issues"
+  },
+  "homepage": "https://github.com/KateWood/challenge#readme",
+  "devDependencies": {
+    "less": "^3.9.0"
+  }
+}
