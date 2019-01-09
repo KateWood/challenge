@@ -20,6 +20,7 @@ body {
   padding: 10px;
   margin: 15px 10px;
   position: relative;
+  overflow: hidden;
   
   .autocomplete {
     border: none;
@@ -61,6 +62,8 @@ body {
 
   height: 1050px;
   margin: 0 10px 15px;
+  padding: 10px;
+  overflow-y: scroll;
 
   .bannerHeader {
     color: @white;
@@ -82,6 +85,22 @@ body {
         color: @blue;
         font-size: 75px;
         vertical-align: top;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 50px;
+
+      .playIcon:before {
+        font-size: 35px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 30px;
+
+      .playIcon:before {
+        font-size: 20px;
       }
     }
   }
@@ -145,16 +164,56 @@ body {
         }
       }
     }
+
+    @media screen and (max-width: 768px) {
+      display: table;
+      margin: 0 auto;
+
+      .testimonial {
+        display: block;
+        width: 100%;
+
+        .image {
+          width: 200px;
+          height: 300px;
+          display: table-caption;
+        }
+
+        .text {
+          display: table-header-group;
+          width: 100%;
+
+          .quote {
+            width: 100%;
+            display: table-caption;
+          }
+
+          .attribution {
+            width: 100%;
+            display: table-header-group;
+          }
+
+          .quotationMark {
+            width: 100%;
+            display: table-footer-group;
+          }
+        }
+      }
+    }
   }
 }
 
 .references {
   width: 90%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
   color: @grayText;
   margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @media screen and (max-width: 768px) {
+    display: table;
+  }
 
   .referenceImage {
     margin: 0 auto;
@@ -168,9 +227,13 @@ body {
 
 .imageSlider {
   background-color: @white;
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  position: relative;
+
+  @media screen and (max-width: 768px) {
+    display: table;
+  }
 
   .dots {
     width: 10px;
