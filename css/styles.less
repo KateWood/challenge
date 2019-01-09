@@ -43,13 +43,15 @@
 
 .banner {
   background-image: url("@{imagesDir}/banner-background.jpg");
-  background-size: 175%;
-  background-repeat: repeat-y;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: top center;
   background-color: @white;
+
   /* grayscale background image only, not supported in Edge */
   background-blend-mode: luminosity;
-  height: 600px;
+
+  height: 1050px;
   margin: 0 10px 15px;
   font-family: Helvetica;
 
@@ -82,5 +84,54 @@
     font-size: 16px;
     margin: 0 auto;
     text-align: center;
+  }
+
+  .testimonials {
+    padding: 100px 15px 15px;
+    height: 50%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .testimonial {
+      .image {
+        height: 80%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+
+        &.person1 {
+          background-image: url("@{imagesDir}/banner-person-1.jpg");
+        }
+
+        &.person2 {
+          background-image: url("@{imagesDir}/banner-person-2.jpg");
+        }
+
+        &.person3 {
+          background-image: url("@{imagesDir}/banner-person-3.jpg");
+        }
+      }
+
+      .text {
+        height: 20%;
+        display: inline-block;
+        padding: 0 10px;
+
+        .quote {
+          color: @white;
+        }
+
+        .attribution {
+          color: @blue;
+        }
+
+        .quotationMark {
+          color: @blue;
+          font-size: 60px;
+          margin: 0 0 -15px;
+        }
+      }
+    }
   }
 }

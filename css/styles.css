@@ -4234,15 +4234,15 @@
 }
 .banner {
   background-image: url("../assets/banner-background.jpg");
-  background-size: 175%;
-  background-repeat: repeat-y;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: top center;
   background-color: #fff;
+  /* grayscale background image only, not supported in Edge */
   background-blend-mode: luminosity;
-  height: 600px;
+  height: 1050px;
   margin: 0 10px 15px;
   font-family: Helvetica;
-  /* grayscale the image for different browsers */
 }
 .banner .bannerHeader {
   color: #fff;
@@ -4284,4 +4284,42 @@
   font-size: 16px;
   margin: 0 auto;
   text-align: center;
+}
+.banner .testimonials {
+  padding: 100px 15px 15px;
+  height: 50%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.banner .testimonials .testimonial .image {
+  height: 80%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.banner .testimonials .testimonial .image.person1 {
+  background-image: url("../assets/banner-person-1.jpg");
+}
+.banner .testimonials .testimonial .image.person2 {
+  background-image: url("../assets/banner-person-2.jpg");
+}
+.banner .testimonials .testimonial .image.person3 {
+  background-image: url("../assets/banner-person-3.jpg");
+}
+.banner .testimonials .testimonial .text {
+  height: 20%;
+  display: inline-block;
+  padding: 0 10px;
+}
+.banner .testimonials .testimonial .text .quote {
+  color: #fff;
+}
+.banner .testimonials .testimonial .text .attribution {
+  color: #00bae7;
+}
+.banner .testimonials .testimonial .text .quotationMark {
+  color: #00bae7;
+  font-size: 60px;
+  margin: 0 0 -15px;
 }
