@@ -6,6 +6,13 @@
 // color variables
 @blue: #00bae7;
 @white: #fff;
+@background: #f8f8f8;
+@grayText: #6c6c6c;
+
+body {
+  background-color: @background;
+  font-family: Helvetica;
+}
 
 .autocompleteForm {
   background-color: @blue;
@@ -53,7 +60,6 @@
 
   height: 1050px;
   margin: 0 10px 15px;
-  font-family: Helvetica;
 
   .bannerHeader {
     color: @white;
@@ -135,3 +141,27 @@
     }
   }
 }
+
+.references {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  color: @grayText;
+  margin: 50px auto;
+
+  img {
+    margin: 0 auto;
+    height: 40px;
+  }
+
+  h6 {
+    margin: 0;
+  }
+}
+
+
+
+
+
+

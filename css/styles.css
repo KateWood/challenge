@@ -4189,6 +4189,10 @@
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
 }
+body {
+  background-color: #f8f8f8;
+  font-family: Helvetica;
+}
 .autocompleteForm {
   background-color: #00bae7;
   padding: 10px;
@@ -4242,7 +4246,6 @@
   background-blend-mode: luminosity;
   height: 1050px;
   margin: 0 10px 15px;
-  font-family: Helvetica;
 }
 .banner .bannerHeader {
   color: #fff;
@@ -4322,4 +4325,27 @@
   color: #00bae7;
   font-size: 60px;
   margin: 0 0 -15px;
+}
+.references {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  color: #6c6c6c;
+  margin: 50px auto;
+}
+.references img {
+  margin: 0 auto;
+  height: 40px;
+}
+.references h6 {
+  margin: 0;
+}
+.imageSlider {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.imageSlider .sliderText {
+  padding: 25%;
 }
