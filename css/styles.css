@@ -4349,19 +4349,55 @@ body {
   background-color: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+.imageSlider .dots {
+  width: 10px;
+  height: 50px;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
+.imageSlider .dots .dot {
+  font-weight: normal;
+  vertical-align: -0.125em;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+.imageSlider .dots .dot.fa-pull-left {
+  margin-right: 0.3em;
+}
+.imageSlider .dots .dot.fa-pull-right {
+  margin-left: 0.3em;
+}
+.imageSlider .dots .dot:before {
+  content: "\f111";
+  color: #b7edf6;
+  font-size: 10px;
+}
+.imageSlider .dots .dot.selected:before {
+  content: "\f111";
+  color: #00bae7;
 }
 .imageSlider .sliderText {
   padding: 10% 15%;
 }
-.imageSlider .sliderText .perks {
+.imageSlider .sliderText .sliderSubtitle {
   color: #00bae7;
   font-weight: 300;
 }
 .imageSlider .mainSliderImage {
-  max-width: 100%;
+  width: 100%;
 }
 .imageSlider .secondarySliderImage {
-  max-width: 49%;
+  width: 49%;
 }
 .photoFeed {
   text-align: center;

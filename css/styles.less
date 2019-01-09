@@ -5,6 +5,7 @@
 
 // color variables
 @blue: #00bae7;
+@lightBlue: #b7edf6;
 @white: #fff;
 @background: #f8f8f8;
 @grayText: #6c6c6c;
@@ -169,22 +170,50 @@ body {
   background-color: @white;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  position: relative;
+
+  .dots {
+    width: 10px;
+    height: 50px;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+
+    .dot {
+      display: inline-block;
+      .fa-icon;
+      .fas;
+
+      &:before {
+        content: @fa-var-circle;
+        color: @lightBlue;
+        font-size: 10px;
+      }
+
+      &.selected {
+        &:before {
+          content: @fa-var-circle;
+          color: @blue;
+        }
+      }
+    }
+  }
 
   .sliderText {
     padding: 10% 15%;
 
-    .perks {
+    .sliderSubtitle {
       color: @blue;
       font-weight: 300;
     }
   }
 
   .mainSliderImage {
-    max-width: 100%;
+    width: 100%;
   }
 
   .secondarySliderImage {
-    max-width: 49%;
+    width: 49%;
   }
 }
 
