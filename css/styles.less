@@ -150,13 +150,35 @@ body {
   color: @grayText;
   margin: 50px auto;
 
-  img {
+  .referenceImage {
     margin: 0 auto;
     height: 40px;
   }
 
-  h6 {
+  .referenceText {
     margin: 0;
+  }
+}
+
+.imageSlider {
+  background-color: @white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .sliderText {
+    padding: 15%;
+
+    .perks {
+      color: @blue;
+    }
+  }
+
+  .mainSliderImage {
+    max-width: 100%;
+  }
+
+  .secondarySliderImage {
+    max-width: 49%;
   }
 }
 

@@ -4334,11 +4334,11 @@ body {
   color: #6c6c6c;
   margin: 50px auto;
 }
-.references img {
+.references .referenceImage {
   margin: 0 auto;
   height: 40px;
 }
-.references h6 {
+.references .referenceText {
   margin: 0;
 }
 .imageSlider {
@@ -4347,5 +4347,14 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 .imageSlider .sliderText {
-  padding: 25%;
+  padding: 15%;
+}
+.imageSlider .sliderText .perks {
+  color: #00bae7;
+}
+.imageSlider .mainSliderImage {
+  max-width: 100%;
+}
+.imageSlider .secondarySliderImage {
+  max-width: 49%;
 }
