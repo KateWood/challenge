@@ -4347,14 +4347,31 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 .imageSlider .sliderText {
-  padding: 15%;
+  padding: 10% 15%;
 }
 .imageSlider .sliderText .perks {
   color: #00bae7;
+  font-weight: 300;
 }
 .imageSlider .mainSliderImage {
   max-width: 100%;
 }
 .imageSlider .secondarySliderImage {
   max-width: 49%;
+}
+.photoFeed {
+  text-align: center;
+}
+.photoFeed .family {
+  color: #00bae7;
+  font-weight: 300;
+}
+.photoFeed .photoFeedImages {
+  display: flex;
+  flex-flow: row wrap;
+}
+.photoFeed .photoFeedImages .photoFeedImage {
+  background-color: #fff;
+  margin: 3px;
+  flex: 1;
 }

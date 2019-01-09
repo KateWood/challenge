@@ -166,10 +166,11 @@ body {
   grid-template-columns: 1fr 1fr;
 
   .sliderText {
-    padding: 15%;
+    padding: 10% 15%;
 
     .perks {
       color: @blue;
+      font-weight: 300;
     }
   }
 
@@ -179,6 +180,26 @@ body {
 
   .secondarySliderImage {
     max-width: 49%;
+  }
+}
+
+.photoFeed {
+  text-align: center;
+
+  .family {
+    color: @blue;
+    font-weight: 300;
+  }
+
+  .photoFeedImages {
+    display: flex;
+    flex-flow: row wrap;
+
+    .photoFeedImage {
+      background-color: @white;
+      margin: 3px;
+      flex: 1;
+    }
   }
 }
 
