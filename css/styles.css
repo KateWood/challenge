@@ -4223,6 +4223,7 @@ body {
 }
 .banner {
   background-image: url("../assets/banner-background.jpg");
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
