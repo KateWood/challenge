@@ -1,6 +1,8 @@
 @import "./fontawesome/less/fontawesome";
 @import "./fontawesome/less/solid";
 
+@imagesDir: "../assets";
+
 // color variables
 @blue: #00bae7;
 @white: #fff;
@@ -8,6 +10,7 @@
 .autocompleteForm {
   background-color: @blue;
   padding: 10px;
+  margin: 15px 10px;
   
   .autocomplete {
     border: none;
@@ -16,7 +19,7 @@
     font-size: 24px;
     font-weight: 100;
     padding: 10px;
-    width: 95%;
+    width: 90%;
 
     &:focus {
       outline: none;
@@ -35,5 +38,49 @@
       content: @fa-var-search;
       color: @white;
     }
+  }
+}
+
+.banner {
+  background-image: url("@{imagesDir}/banner-background.jpg");
+  background-size: 175%;
+  background-repeat: repeat-y;
+  background-position: top center;
+  background-color: @white;
+  /* grayscale background image only, not supported in Edge */
+  background-blend-mode: luminosity;
+  height: 600px;
+  margin: 0 10px 15px;
+  font-family: Helvetica;
+
+  .bannerHeader {
+    color: @white;
+    font-size: 100px;
+    padding-top: 75px;
+    margin: 0 auto;
+    text-align: center;
+
+    .italic {
+      font-style: italic;
+    }
+
+    .playIcon {
+      .fa-icon;
+      .fas;
+
+      &:before {
+        content: @fa-var-play-circle;
+        color: @blue;
+        font-size: 75px;
+        vertical-align: top;
+      }
+    }
+  }
+
+  .bannerText {
+    color: @blue;
+    font-size: 16px;
+    margin: 0 auto;
+    text-align: center;
   }
 }

@@ -4192,6 +4192,7 @@
 .autocompleteForm {
   background-color: #00bae7;
   padding: 10px;
+  margin: 15px 10px;
 }
 .autocompleteForm .autocomplete {
   border: none;
@@ -4200,7 +4201,7 @@
   font-size: 24px;
   font-weight: 100;
   padding: 10px;
-  width: 95%;
+  width: 90%;
 }
 .autocompleteForm .autocomplete:focus {
   outline: none;
@@ -4230,4 +4231,57 @@
 .autocompleteForm .searchIcon:before {
   content: "\f002";
   color: #fff;
+}
+.banner {
+  background-image: url("../assets/banner-background.jpg");
+  background-size: 175%;
+  background-repeat: repeat-y;
+  background-position: top center;
+  background-color: #fff;
+  background-blend-mode: luminosity;
+  height: 600px;
+  margin: 0 10px 15px;
+  font-family: Helvetica;
+  /* grayscale the image for different browsers */
+}
+.banner .bannerHeader {
+  color: #fff;
+  font-size: 100px;
+  padding-top: 75px;
+  margin: 0 auto;
+  text-align: center;
+}
+.banner .bannerHeader .italic {
+  font-style: italic;
+}
+.banner .bannerHeader .playIcon {
+  font-weight: normal;
+  vertical-align: -0.125em;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+.banner .bannerHeader .playIcon.fa-pull-left {
+  margin-right: 0.3em;
+}
+.banner .bannerHeader .playIcon.fa-pull-right {
+  margin-left: 0.3em;
+}
+.banner .bannerHeader .playIcon:before {
+  content: "\f144";
+  color: #00bae7;
+  font-size: 75px;
+  vertical-align: top;
+}
+.banner .bannerText {
+  color: #00bae7;
+  font-size: 16px;
+  margin: 0 auto;
+  text-align: center;
 }
