@@ -4310,6 +4310,10 @@ body {
 .banner .testimonials .testimonial .image.person3 {
   background-image: url("../assets/banner-person-3.jpg");
 }
+.banner .testimonials .testimonial .image.rotate {
+  transform: rotateY(360deg);
+  transition: 2s;
+}
 .banner .testimonials .testimonial .text {
   height: 20%;
   display: inline-block;
