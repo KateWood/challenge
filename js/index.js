@@ -13,10 +13,10 @@ $(function() {
   });
 
   var imagesForSlider = [
-    ['https://picsum.photos/300/200/?random', 'https://picsum.photos/200/150/?random', 'https://picsum.photos/200/150/?random'],
+    ['https://picsum.photos/300/200/?random', './assets/halloween.jpg', './assets/cloud-racers.jpg'],
     ['./assets/halloween.jpg', './assets/cloud-racers.jpg', './assets/anniversary.jpg'],
-    ['https://picsum.photos/300/200/?random', 'https://picsum.photos/200/150/?random', 'https://picsum.photos/200/150/?random'],
-    ['https://picsum.photos/300/200/?random', 'https://picsum.photos/200/150/?random', 'https://picsum.photos/200/150/?random']
+    ['./assets/cloud-racers.jpg', './assets/anniversary.jpg', 'https://picsum.photos/200/150/?random'],
+    ['./assets/anniversary.jpg', 'https://picsum.photos/200/150/?random', './assets/halloween.jpg']
   ];
 
   var sliderTitle = ['THE PEOPLE', 'THE CULTURE', 'THE VALUES', 'THE WORK'];
